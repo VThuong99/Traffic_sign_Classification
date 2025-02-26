@@ -24,8 +24,6 @@ def main():
 
     # Get image arrays and labels for all image files
     images, labels = load_data(sys.argv[1])
-    # print(labels)
-    # print(images)
 
     # Split data into training and testing sets
     labels = tf.keras.utils.to_categorical(labels)
